@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import jobs from './jobsList.json';
-export async function GET() {
+
+export async function GET(req, res) {
   return NextResponse.json({ success: true, data: jobs });
 }
 

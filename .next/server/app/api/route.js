@@ -33,6 +33,76 @@ module.exports = require("next/dist/compiled/next-server/app-route.runtime.dev.j
 
 /***/ }),
 
+/***/ "buffer":
+/*!*************************!*\
+  !*** external "buffer" ***!
+  \*************************/
+/***/ ((module) => {
+
+module.exports = require("buffer");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "net":
+/*!**********************!*\
+  !*** external "net" ***!
+  \**********************/
+/***/ ((module) => {
+
+module.exports = require("net");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "tty":
+/*!**********************!*\
+  !*** external "tty" ***!
+  \**********************/
+/***/ ((module) => {
+
+module.exports = require("tty");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+module.exports = require("zlib");
+
+/***/ }),
+
 /***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fapi%2Froute&page=%2Fapi%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Froute.js&appDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fapi%2Froute&page=%2Fapi%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Froute.js&appDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D! ***!
@@ -49,7 +119,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GET: () => (/* binding */ GET),\n/* harmony export */   POST: () => (/* binding */ POST)\n/* harmony export */ });\n/* harmony import */ var next_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/server */ \"(rsc)/./node_modules/next/dist/api/server.js\");\n/* harmony import */ var _jobsList_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./jobsList.json */ \"(rsc)/./src/app/api/jobsList.json\");\n\n\nasync function GET() {\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n        success: true,\n        data: _jobsList_json__WEBPACK_IMPORTED_MODULE_1__\n    });\n}\nasync function POST(req) {\n    const { id } = req.body;\n    const updatedJobs = _jobsList_json__WEBPACK_IMPORTED_MODULE_1__.filter((job)=>job.id !== id);\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n        success: true,\n        data: updatedJobs\n    });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2FwaS9yb3V0ZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQTJDO0FBQ1I7QUFDNUIsZUFBZUU7SUFDcEIsT0FBT0YscURBQVlBLENBQUNHLElBQUksQ0FBQztRQUFFQyxTQUFTO1FBQU1DLE1BQU1KLDJDQUFJQTtJQUFDO0FBQ3ZEO0FBRU8sZUFBZUssS0FBS0MsR0FBRztJQUM1QixNQUFNLEVBQUVDLEVBQUUsRUFBRSxHQUFHRCxJQUFJRSxJQUFJO0lBQ3ZCLE1BQU1DLGNBQWNULDJDQUFJQSxDQUFDVSxNQUFNLENBQUMsQ0FBQ0MsTUFBUUEsSUFBSUosRUFBRSxLQUFLQTtJQUNwRCxPQUFPUixxREFBWUEsQ0FBQ0csSUFBSSxDQUFDO1FBQUVDLFNBQVM7UUFBTUMsTUFBTUs7SUFBWTtBQUM5RCIsInNvdXJjZXMiOlsid2VicGFjazovL215LW5leHRqcy1hcHAvLi9zcmMvYXBwL2FwaS9yb3V0ZS5qcz9lNThhIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5leHRSZXNwb25zZSB9IGZyb20gJ25leHQvc2VydmVyJztcbmltcG9ydCBqb2JzIGZyb20gJy4vam9ic0xpc3QuanNvbic7XG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKCkge1xuICByZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oeyBzdWNjZXNzOiB0cnVlLCBkYXRhOiBqb2JzIH0pO1xufVxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXEpIHtcbiAgY29uc3QgeyBpZCB9ID0gcmVxLmJvZHk7XG4gIGNvbnN0IHVwZGF0ZWRKb2JzID0gam9icy5maWx0ZXIoKGpvYikgPT4gam9iLmlkICE9PSBpZCk7XG4gIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHN1Y2Nlc3M6IHRydWUsIGRhdGE6IHVwZGF0ZWRKb2JzIH0pO1xufVxuIl0sIm5hbWVzIjpbIk5leHRSZXNwb25zZSIsImpvYnMiLCJHRVQiLCJqc29uIiwic3VjY2VzcyIsImRhdGEiLCJQT1NUIiwicmVxIiwiaWQiLCJib2R5IiwidXBkYXRlZEpvYnMiLCJmaWx0ZXIiLCJqb2IiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./src/app/api/route.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GET: () => (/* binding */ GET),\n/* harmony export */   POST: () => (/* binding */ POST)\n/* harmony export */ });\n/* harmony import */ var next_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/server */ \"(rsc)/./node_modules/next/dist/api/server.js\");\n/* harmony import */ var _jobsList_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./jobsList.json */ \"(rsc)/./src/app/api/jobsList.json\");\n/* harmony import */ var _middleware_compression__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/middleware/compression */ \"(rsc)/./src/middleware/compression.js\");\n\n\n\nasync function GET(req, res) {\n    await (0,_middleware_compression__WEBPACK_IMPORTED_MODULE_2__.compressionMiddleware)(req, res);\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n        success: true,\n        data: _jobsList_json__WEBPACK_IMPORTED_MODULE_1__\n    });\n}\nasync function POST(req) {\n    const { id } = req.body;\n    const updatedJobs = _jobsList_json__WEBPACK_IMPORTED_MODULE_1__.filter((job)=>job.id !== id);\n    return next_server__WEBPACK_IMPORTED_MODULE_0__.NextResponse.json({\n        success: true,\n        data: updatedJobs\n    });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2FwaS9yb3V0ZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUEyQztBQUNSO0FBQzhCO0FBRzFELGVBQWVHLElBQUlDLEdBQUcsRUFBRUMsR0FBRztJQUNoQyxNQUFNSCw4RUFBcUJBLENBQUNFLEtBQUtDO0lBQ2pDLE9BQU9MLHFEQUFZQSxDQUFDTSxJQUFJLENBQUM7UUFBRUMsU0FBUztRQUFNQyxNQUFNUCwyQ0FBSUE7SUFBQztBQUN2RDtBQUVPLGVBQWVRLEtBQUtMLEdBQUc7SUFDNUIsTUFBTSxFQUFFTSxFQUFFLEVBQUUsR0FBR04sSUFBSU8sSUFBSTtJQUN2QixNQUFNQyxjQUFjWCwyQ0FBSUEsQ0FBQ1ksTUFBTSxDQUFDLENBQUNDLE1BQVFBLElBQUlKLEVBQUUsS0FBS0E7SUFDcEQsT0FBT1YscURBQVlBLENBQUNNLElBQUksQ0FBQztRQUFFQyxTQUFTO1FBQU1DLE1BQU1JO0lBQVk7QUFDOUQiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9teS1uZXh0anMtYXBwLy4vc3JjL2FwcC9hcGkvcm91dGUuanM/ZTU4YSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOZXh0UmVzcG9uc2UgfSBmcm9tICduZXh0L3NlcnZlcic7XG5pbXBvcnQgam9icyBmcm9tICcuL2pvYnNMaXN0Lmpzb24nO1xuaW1wb3J0IHsgY29tcHJlc3Npb25NaWRkbGV3YXJlIH0gZnJvbSAnQC9taWRkbGV3YXJlL2NvbXByZXNzaW9uJztcblxuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gR0VUKHJlcSwgcmVzKSB7XG4gIGF3YWl0IGNvbXByZXNzaW9uTWlkZGxld2FyZShyZXEsIHJlcyk7XG4gIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7IHN1Y2Nlc3M6IHRydWUsIGRhdGE6IGpvYnMgfSk7XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBQT1NUKHJlcSkge1xuICBjb25zdCB7IGlkIH0gPSByZXEuYm9keTtcbiAgY29uc3QgdXBkYXRlZEpvYnMgPSBqb2JzLmZpbHRlcigoam9iKSA9PiBqb2IuaWQgIT09IGlkKTtcbiAgcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHsgc3VjY2VzczogdHJ1ZSwgZGF0YTogdXBkYXRlZEpvYnMgfSk7XG59XG4iXSwibmFtZXMiOlsiTmV4dFJlc3BvbnNlIiwiam9icyIsImNvbXByZXNzaW9uTWlkZGxld2FyZSIsIkdFVCIsInJlcSIsInJlcyIsImpzb24iLCJzdWNjZXNzIiwiZGF0YSIsIlBPU1QiLCJpZCIsImJvZHkiLCJ1cGRhdGVkSm9icyIsImZpbHRlciIsImpvYiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./src/app/api/route.js\n");
+
+/***/ }),
+
+/***/ "(rsc)/./src/middleware/compression.js":
+/*!***************************************!*\
+  !*** ./src/middleware/compression.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   compressionMiddleware: () => (/* binding */ compressionMiddleware)\n/* harmony export */ });\n/* harmony import */ var compression__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! compression */ \"(rsc)/./node_modules/compression/index.js\");\n/* harmony import */ var compression__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(compression__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _runMiddleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./runMiddleware */ \"(rsc)/./src/middleware/runMiddleware.js\");\n\n\nconst compressionMiddleware = (req, res)=>{\n    return (0,_runMiddleware__WEBPACK_IMPORTED_MODULE_1__.runMiddleware)(req, res, compression__WEBPACK_IMPORTED_MODULE_0___default()());\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvbWlkZGxld2FyZS9jb21wcmVzc2lvbi5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQ3NDO0FBQ1U7QUFFekMsTUFBTUUsd0JBQXdCLENBQUNDLEtBQUtDO0lBQ3pDLE9BQU9ILDZEQUFhQSxDQUFDRSxLQUFLQyxLQUFLSixrREFBV0E7QUFDNUMsRUFBRSIsInNvdXJjZXMiOlsid2VicGFjazovL215LW5leHRqcy1hcHAvLi9zcmMvbWlkZGxld2FyZS9jb21wcmVzc2lvbi5qcz85NDhkIl0sInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IGNvbXByZXNzaW9uIGZyb20gJ2NvbXByZXNzaW9uJztcbmltcG9ydCB7IHJ1bk1pZGRsZXdhcmUgfSBmcm9tICcuL3J1bk1pZGRsZXdhcmUnOyBcblxuZXhwb3J0IGNvbnN0IGNvbXByZXNzaW9uTWlkZGxld2FyZSA9IChyZXEsIHJlcykgPT4ge1xuICByZXR1cm4gcnVuTWlkZGxld2FyZShyZXEsIHJlcywgY29tcHJlc3Npb24oKSk7XG59O1xuIl0sIm5hbWVzIjpbImNvbXByZXNzaW9uIiwicnVuTWlkZGxld2FyZSIsImNvbXByZXNzaW9uTWlkZGxld2FyZSIsInJlcSIsInJlcyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./src/middleware/compression.js\n");
+
+/***/ }),
+
+/***/ "(rsc)/./src/middleware/runMiddleware.js":
+/*!*****************************************!*\
+  !*** ./src/middleware/runMiddleware.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   runMiddleware: () => (/* binding */ runMiddleware)\n/* harmony export */ });\n// src/middleware/runMiddleware.js\nfunction runMiddleware(req, res, fn) {\n    return new Promise((resolve, reject)=>{\n        fn(req, res, (result)=>{\n            if (result instanceof Error) {\n                return reject(result);\n            }\n            return resolve(result);\n        });\n    });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvbWlkZGxld2FyZS9ydW5NaWRkbGV3YXJlLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxrQ0FBa0M7QUFDM0IsU0FBU0EsY0FBY0MsR0FBRyxFQUFFQyxHQUFHLEVBQUVDLEVBQUU7SUFDeEMsT0FBTyxJQUFJQyxRQUFRLENBQUNDLFNBQVNDO1FBQzNCSCxHQUFHRixLQUFLQyxLQUFLLENBQUNLO1lBQ1osSUFBSUEsa0JBQWtCQyxPQUFPO2dCQUMzQixPQUFPRixPQUFPQztZQUNoQjtZQUNBLE9BQU9GLFFBQVFFO1FBQ2pCO0lBQ0Y7QUFDRiIsInNvdXJjZXMiOlsid2VicGFjazovL215LW5leHRqcy1hcHAvLi9zcmMvbWlkZGxld2FyZS9ydW5NaWRkbGV3YXJlLmpzP2Y0MzYiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gc3JjL21pZGRsZXdhcmUvcnVuTWlkZGxld2FyZS5qc1xuZXhwb3J0IGZ1bmN0aW9uIHJ1bk1pZGRsZXdhcmUocmVxLCByZXMsIGZuKSB7XG4gIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgZm4ocmVxLCByZXMsIChyZXN1bHQpID0+IHtcbiAgICAgIGlmIChyZXN1bHQgaW5zdGFuY2VvZiBFcnJvcikge1xuICAgICAgICByZXR1cm4gcmVqZWN0KHJlc3VsdCk7XG4gICAgICB9XG4gICAgICByZXR1cm4gcmVzb2x2ZShyZXN1bHQpO1xuICAgIH0pO1xuICB9KTtcbn1cbiJdLCJuYW1lcyI6WyJydW5NaWRkbGV3YXJlIiwicmVxIiwicmVzIiwiZm4iLCJQcm9taXNlIiwicmVzb2x2ZSIsInJlamVjdCIsInJlc3VsdCIsIkVycm9yIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./src/middleware/runMiddleware.js\n");
 
 /***/ }),
 
@@ -70,7 +160,7 @@ module.exports = /*#__PURE__*/JSON.parse('[{"id":1,"Job":"Backend Developer","Co
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fapi%2Froute&page=%2Fapi%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Froute.js&appDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/mime-db","vendor-chunks/mime-types","vendor-chunks/compression","vendor-chunks/negotiator","vendor-chunks/vary","vendor-chunks/safe-buffer","vendor-chunks/on-headers","vendor-chunks/compressible","vendor-chunks/bytes","vendor-chunks/accepts"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fapi%2Froute&page=%2Fapi%2Froute&appPaths=&pagePath=private-next-app-dir%2Fapi%2Froute.js&appDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fabbay%2FDesktop%2Fcuvette&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

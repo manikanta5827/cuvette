@@ -20,8 +20,8 @@ export default function Home() {
 
   const handleApply = async (id) => {
     try {
-      await axios.post('/api', { id });
       setJobs(jobs.filter((job) => job.id !== id));
+      await axios.post('/api', { id });
     } catch (error) {
       console.error('Failed to apply for job', error);
     }
