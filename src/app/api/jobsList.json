@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "Job": "Backend Developer",
+    "Company": "Tech Solutions",
+    "Location": "Hyderabad, India",
+    "Skills": ["Node.js", "MongoDB", "Express"],
+    "Stipend": 25000,
+    "Duration": "6 months",
+    "OpeningsMode": "7-8 hours"
+  },
+  {
+    "id": 2,
+    "Job": "Frontend Developer",
+    "Company": "Creative Designs",
+    "Location": "Bangalore, India",
+    "Skills": ["React", "CSS", "JavaScript"],
+    "Stipend": 12000,
+    "Duration": "4 months",
+    "OpeningsMode": "7-8 hours"
+  },
+  {
+    "id": 3,
+    "Job": "Fullstack Developer",
+    "Company": "InnoVate",
+    "Location": "Pune, India",
+    "Skills": ["Node.js", "React", "MongoDB"],
+    "Stipend": 30000,
+    "Duration": "8 months",
+    "OpeningsMode": "7-8 hours"
+  },
+  {
+    "id": 4,
+    "Job": "Data Scientist",
+    "Company": "Data Insights",
+    "Location": "Delhi, India",
+    "Skills": ["Python", "Machine Learning", "SQL"],
+    "Stipend": 35000,
+    "Duration": "12 months",
+    "OpeningsMode": "7-8 hours"
+  },
+  {
+    "id": 5,
+    "Job": "Mobile App Developer",
+    "Company": "Appify",
+    "Location": "Mumbai, India",
+    "Skills": ["Flutter", "Dart", "Firebase"],
+    "Stipend": 20000,
+    "Duration": "5 months",
+    "OpeningsMode": "7-8 hours"
+  },
+  {
+    "id": 6,
+    "Job": "DevOps Engineer",
+    "Company": "CloudOps",
+    "Location": "Chennai, India",
+    "Skills": ["Docker", "Kubernetes", "AWS"],
+    "Stipend": 28000,
+    "Duration": "9 months",
+    "OpeningsMode": "7-8 hours"
+  },
+  {
+    "id": 7,
+    "Job": "Cybersecurity Specialist",
+    "Company": "SecureTech",
+    "Location": "Gurgaon, India",
+    "Skills": ["Network Security", "Ethical Hacking", "Firewalls"],
+    "Stipend": 32000,
+    "Duration": "10 months",
+    "OpeningsMode": "7-8 hours"
+  }
+]
